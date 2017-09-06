@@ -11,3 +11,14 @@ h6 {
   font-family: 'Arvo', serif;
 }
 
+nav {
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.bike-logo {
+  position: relative;
+  bottom: 30px;
+}
