@@ -1,5 +1,11 @@
 /*Citizen Bike eCommerce CSS*/
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f4ef;
+}
+
 html,
 body,
 h1,
@@ -21,4 +27,9 @@ nav {
 .bike-logo {
   position: relative;
   bottom: 30px;
+}
+
+.call {
+  position: relative;
+  right: 120px;
 }

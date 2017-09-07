@@ -101,15 +101,6 @@ for(var i = 0; i < bikeArray.length; i++) {
     // add new bike to the element with id="bikes"
     document.getElementById("bikes").appendChild(newBike);
 
-
-
-
-
-
-
-
-
-
-}
+  }
 
 });
