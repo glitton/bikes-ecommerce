@@ -13,7 +13,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+footer {
   font-family: 'Arvo', serif;
 }
 
@@ -52,36 +54,41 @@ nav {
   position: relative;
 }
 
+img.img-responsive {
+  height: 500px;
+  width: 500px;
+}
+
 i.fa.fa-bicycle {
   font-size: 20px;
 }
 
 .frame {
-  margin-left: 55px;
+  margin-left: 25px;
 }
 
 .speed {
   position: relative;
-  left: 148px;
+  left: 118px;
   bottom: 28px;
 }
 
 .weight {
   position: relative;
-  left: 250px;
+  left: 220px;
   bottom: 56px;
 }
 
 .price {
   position: relative;
-  left: 339px;
+  left: 309px;
   bottom: 84px;
 }
 
 button {
   position: absolute;
   bottom: 85px;
-  left: 424px;
+  left: 405px;
 }
 
 footer {
