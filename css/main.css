@@ -29,7 +29,73 @@ nav {
   bottom: 30px;
 }
 
-.call {
+.phone-number {
   position: relative;
-  right: 120px;
+  color: white;
+  right: 25px;
+  top: 15px;
+}
+
+.phone {
+  right: 35px;
+  top: 10px;
+  color: white;
+}
+
+.cart{
+  bottom: 8px;
+}
+
+.bike-title {
+  text-align: center;
+  top: 15px;
+  position: relative;
+}
+
+i.fa.fa-bicycle {
+  font-size: 20px;
+}
+
+.frame {
+  margin-left: 55px;
+}
+
+.speed {
+  position: relative;
+  left: 148px;
+  bottom: 28px;
+}
+
+.weight {
+  position: relative;
+  left: 250px;
+  bottom: 56px;
+}
+
+.price {
+  position: relative;
+  left: 339px;
+  bottom: 84px;
+}
+
+button {
+  position: absolute;
+  bottom: 85px;
+  left: 424px;
+}
+
+footer {
+  height: 52px;
+  background-color: #033c73;
+  border-color: #022f5a;
+}  
+
+footer p {
+  margin-left: 100px;
+  padding: 15px;
+  color: white;
+}   
+
+footer p a {
+  color: white;
 }

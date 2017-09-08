@@ -13,14 +13,14 @@ $(document).ready(function(){
   }
 
   // Create the bikes using the foldingBikes constructor
-  var tokyo     = new foldingBike('Tokyo','Steel','6-Speed','30lbs.','$199','img/tokyo.jpg');
-  var miami     = new foldingBike('Miami','Steel','6-Speed','32lbs.','$299','img/miami.jpg');
-  var milan     = new foldingBike('Milan','Steel','1-Speed','33lbs.','$249', 'img/miami.jpg');
-  var seoul     = new foldingBike('Seoul','Alloy','6-Speed','26lbs.','$329', 'img/seoul.jpg');
-  var gotham7   = new foldingBike('Gotham 7','Alloy','7-Speed','29lbs','$379', 'img/gotham_7.jpg');
-  var gotham247 = new foldingBike('Gotham 24-7','Alloy','7-Speed','30lbs.', '$429','img/gotham_24-7.jpg');
-  var barcelona = new foldingBike('Barcelona', 'Alloy','3-Speed','31lbs.','$449','img/barcelona.jpg');
-  var frisco    = new foldingBike('Frisco', 'Alloy','e-bike','43lbs.','$1099','img/frisco.jpg');
+  var tokyo     = new foldingBike('Tokyo','Steel','6-Speed','30lbs.','199','img/tokyo.jpg');
+  var miami     = new foldingBike('Miami','Steel','6-Speed','32lbs.','299','img/miami.jpg');
+  var milan     = new foldingBike('Milan','Steel','1-Speed','33lbs.','249', 'img/miami.jpg');
+  var seoul     = new foldingBike('Seoul','Alloy','6-Speed','26lbs.','329', 'img/seoul.jpg');
+  var gotham7   = new foldingBike('Gotham 7','Alloy','7-Speed','29lbs','379', 'img/gotham_7.jpg');
+  var gotham247 = new foldingBike('Gotham 24-7','Alloy','7-Speed','30lbs.', '429','img/gotham_24-7.jpg');
+  var barcelona = new foldingBike('Barcelona', 'Alloy','3-Speed','31lbs.','449','img/barcelona.jpg');
+  var frisco    = new foldingBike('Frisco', 'Alloy','e-bike','43lbs.','1099','img/frisco.jpg');
 
   // Create an array to add folding bikes to
   var bikeArray = new Array
@@ -59,20 +59,24 @@ for(var i = 0; i < bikeArray.length; i++) {
   
     //Create text for new elements
     var brandTxt  = document.createTextNode(bikeArray[i].brand);
-    var frameTxt  = document.createTextNode(': ' + bikeArray[i].frame);
-    var speedTxt  = document.createTextNode(': ' + bikeArray[i].speed);
-    var weightTxt = document.createTextNode(': ' + bikeArray[i].weight);
-    var priceTxt  = document.createTextNode(': ' + bikeArray[i].price);
+    var frameTxt  = document.createTextNode(' ' + bikeArray[i].frame);
+    var speedTxt  = document.createTextNode(' ' + bikeArray[i].speed);
+    var weightTxt = document.createTextNode(' ' + bikeArray[i].weight);
+    var priceTxt  = document.createTextNode(' ' + bikeArray[i].price);
     var buyTxt    = document.createTextNode("Buy");
 
     //Add image source
     image.src = bikeArray[i].image;
 
     //Add class attributes
-    image.className   = "img-responsive";
-    buyBtn.className  = "btn btn-primary btn-md";
-    bikeDiv.className = "col-sm-6";
-    // newDiv.className  = "tshirt shirtName" + [i] + " thumbnail"
+    image.className    = "img-responsive";
+    buyBtn.className   = "btn btn-primary btn-md";
+    bikeDiv.className  = "col-sm-6";
+    brandH3.className  = "bike-title";
+    frameH4.className  = "frame";
+    speedH4.className  = "speed";
+    weightH4.className = "weight";
+    priceH4.className  = "price";
 
     //Add text to elements
     brandH3.appendChild(brandTxt);
