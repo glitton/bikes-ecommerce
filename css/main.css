@@ -3,7 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f4ef;
+  /*background-color: #f5f4ef;*/
+  background-color: #e8f1f4;
 }
 
 html,
@@ -49,9 +50,11 @@ nav {
 }
 
 .bike-title {
-  text-align: center;
-  top: 15px;
-  position: relative;
+  text-align: left;
+  top: 48px;
+  position: relative;    
+  color: black;
+  left: 15px; 
 }
 
 img.img-responsive {
@@ -61,34 +64,40 @@ img.img-responsive {
 
 i.fa.fa-bicycle {
   font-size: 20px;
+  color: black;
 }
 
 .frame {
-  margin-left: 25px;
+  margin-left: 86px;
 }
 
 .speed {
   position: relative;
-  left: 118px;
+  left: 179px;
   bottom: 28px;
+  color: black;
 }
 
 .weight {
   position: relative;
-  left: 220px;
+  left: 281px;
   bottom: 56px;
+  color: black;
 }
 
 .price {
   position: relative;
-  left: 309px;
+  left: 370px;
   bottom: 84px;
+  color: black;
 }
 
-button {
+.btn {
   position: absolute;
-  bottom: 85px;
-  left: 405px;
+  bottom: 42px;
+  left: 207px;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 footer {

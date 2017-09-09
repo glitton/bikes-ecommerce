@@ -33,7 +33,7 @@ for(var i = 0; i < bikeArray.length; i++) {
     //Create new elements for each folding bike
   var newBike  = document.createElement("div");
   var bikeDiv  = document.createElement("div");
-  var brandH3  = document.createElement("h3");
+  var brandH2  = document.createElement("h2");
   var frameH4  = document.createElement("h4");
   var speedH4  = document.createElement("h4");
   var weightH4 = document.createElement("h4");
@@ -63,7 +63,7 @@ for(var i = 0; i < bikeArray.length; i++) {
     var speedTxt  = document.createTextNode(' ' + bikeArray[i].speed);
     var weightTxt = document.createTextNode(' ' + bikeArray[i].weight);
     var priceTxt  = document.createTextNode(' ' + bikeArray[i].price);
-    var buyTxt    = document.createTextNode("Buy");
+    var buyTxt    = document.createTextNode("Add To Cart");
 
     //Add image source
     image.src = bikeArray[i].image;
@@ -72,14 +72,14 @@ for(var i = 0; i < bikeArray.length; i++) {
     image.className    = "img-responsive";
     buyBtn.className   = "btn btn-primary btn-md";
     bikeDiv.className  = "col-sm-6";
-    brandH3.className  = "bike-title";
+    brandH2.className  = "bike-title";
     frameH4.className  = "frame";
     speedH4.className  = "speed";
     weightH4.className = "weight";
     priceH4.className  = "price";
 
     //Add text to elements
-    brandH3.appendChild(brandTxt);
+    brandH2.appendChild(brandTxt);
     frameH4.appendChild(iconFrame); //add font awesome bicycle icon
     iconFrame.appendChild(frameTxt)
     speedH4.appendChild(iconSpeed); //add font awesome gear icon
@@ -91,7 +91,7 @@ for(var i = 0; i < bikeArray.length; i++) {
     buyBtn.appendChild(buyTxt);
 
     // add elements to bike div
-    bikeDiv.appendChild(brandH3);
+    bikeDiv.appendChild(brandH2);
     bikeDiv.appendChild(image);
     bikeDiv.appendChild(frameH4);
     bikeDiv.appendChild(speedH4);
